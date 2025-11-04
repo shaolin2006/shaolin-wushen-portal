@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asistente - Shaolin Wushen Academy</title>
+
+  <!-- Fuente tipográfica -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    .chat { background:white;padding:12px;border-radius:8px;max-width:800px;margin:18px auto;box-shadow:0 1px 6px rgba(0,0,0,0.06) }
+    .messages{height:300px;overflow:auto;padding:8px;border:1px solid #eee;border-radius:6px;background:#fafafa}
+    .msg{margin:8px 0;padding:8px;border-radius:6px;max-width:80%}
+    .msg.user{background:#DCF8C6;margin-left:auto}
+    .msg.bot{background:#f1f1f1;margin-right:auto}
+    .chat-form{display:flex;gap:8px;margin-top:10px}
+    .chat-form input{flex:1;padding:8px}
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+  <img src="assets/images/Wushen_logo-removebg.png" alt="Shaolin Wushen Logo" />
+      <h1>Shaolin Wushen Academy</h1>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="filosofia.html">Filosofía</a>
+      <a href="classes.html">Clases</a>
+      <a href="instructors.html">Instructores</a>
+      <a href="assistant.html">Asistente virtual</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="students.html">Alumnos</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Asistente Virtual</h2>
+    <div class="chat">
+      <div id="messages" class="messages"></div>
+
+      <div class="chat-form">
+        <input id="userInput" placeholder="Pregunta sobre clases, horarios o la escuela. Ej.: '¿Cuándo son las clases para niños?'" />
+        <button id="sendBtn">Enviar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Shaolin Wushen Academy. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/assistant.js"></script>
+</body>
+</html>

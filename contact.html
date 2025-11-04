@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Kung Fu School</title>
+
+  <!-- Fuente tipográfica -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-form{max-width:600px;margin:18px auto;background:white;padding:16px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px}
+  </style>
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="main-header">
+    <div class="logo">
+  <img src="assets/images/Wushen_logo-removebg.png" alt="Shaolin Wushen Logo" />
+      <h1>Shaolin Wushen Academy</h1>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="filosofia.html">Filosofía</a>
+      <a href="classes.html">Clases</a>
+      <a href="instructors.html">Instructores</a>
+      <a href="assistant.html">Asistente virtual</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="students.html">Alumnos</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input placeholder="Your name" id="name" />
+      <input placeholder="Your email" id="email" />
+      <textarea placeholder="Message" id="message"></textarea>
+      <button id="submitBtn">Send</button>
+      <p id="status" style="color:green;display:none">Message sent (simulated).</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Shaolin Wushen Academy. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function(){
+      // Simple simulation - no backend
+      document.getElementById('status').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
